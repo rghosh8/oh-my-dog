@@ -14,6 +14,8 @@ This capstone uses generative adversarial network (GAN) to generate realistic do
 
 ### Data
 
+https://www.kaggle.com/c/generative-dog-images
+
 ### Exploratory Data Analysis
 
 ### Network Architecture

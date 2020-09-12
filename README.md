@@ -20,4 +20,4 @@ This capstone uses generative adversarial network (GAN) to generate realistic do
 
 ### Results
 
-### Conclusions
+### Conclusion

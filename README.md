@@ -18,6 +18,8 @@ https://www.kaggle.com/c/generative-dog-images
 
 ### Exploratory Data Analysis
 
+![](./figures/dog_breed_distribution.png)    
+
 ### Network Architecture
 
 ### Results

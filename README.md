@@ -30,7 +30,7 @@ In total, there are 25,000 dogs and 120 breeds.
 
 ![](./figures/dog_breed_distribution.png)  
 
-![](./data/all-dogs/n02085620_7.jpg)
+![](./figures/n02085620_7.jpg)
 
 ### Network Architecture
 

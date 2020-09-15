@@ -22,6 +22,8 @@ https://www.kaggle.com/c/generative-dog-images
 
 ### Exploratory Data Analysis
 
+In total, there are 25,000 dogs and 121 classes.
+
 ![](./figures/dog_breed_distribution.png)    
 
 ### Network Architecture

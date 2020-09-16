@@ -1,32 +1,31 @@
 import tensorflow as tf
+from static import *
+from tensorflow.keras import layers
 
-dim = 64
 def d_model():
-    model = tf.keras.Sequential(
-        [
-            tf.keras.layers.Conv2D(64, (4,4), strides=(2,2), padding='same', input_shape=[dim,dim,3],\
-                kernel_initializer=WEIGHT_INIT),
-            tf.keras.layers.BatchNormalization(),
-            tf.keras.layers.LeakyReLU(),
-#             tf.keras.layers.Dropout(0.25),
-            
-            tf.keras.layers.Conv2D(128, (4,4), strides=(2,2), padding='same',\
-                kernel_initializer=WEIGHT_INIT),
-            tf.keras.layers.BatchNormalization(),
-            tf.keras.layers.LeakyReLU(),
-#             tf.keras.layers.Dropout(0.25),
-            
-            tf.keras.layers.Conv2D(256, (4,4), strides=(2,2), padding='same',\
-                kernel_initializer=WEIGHT_INIT),
-            tf.keras.layers.BatchNormalization(),
-            tf.keras.layers.LeakyReLU(),
-#             tf.keras.layers.Dropout(0.25),
-            
-            # flatten input into 1-D and output a single a number from the last layer using sigmoid activation
-            tf.keras.layers.Flatten(),
-            tf.keras.layers.Dense(1, activation='sigmoid')
-        ]
-    )
+    model = tf.keras.Sequential()
+    model.add(layers.Conv2D(64, (4,4), strides=(2,2), padding='same', input_shape=[image_width,image_height,3],\
+                            kernel_initializer=weight_init))
+    model.add(layers.BatchNormalization())
+    model.add(layers.LeakyReLU())
+    print(model.output_shape)
+
+    model.add(layers.Conv2D(128, (4,4), strides=(2,2), padding='same',\
+                            kernel_initializer=weight_init))
+    model.add(layers.BatchNormalization())
+    model.add(layers.LeakyReLU())
+    print(model.output_shape)
+      
+    model.add(layers.Conv2D(256, (4,4), strides=(2,2), padding='same',\
+                            kernel_initializer=weight_init))
+    model.add(layers.BatchNormalization())
+    model.add(layers.LeakyReLU())
+    print(model.output_shape)
+
+    model.add(layers.Flatten())
+    model.add(layers.Dense(1, activation='sigmoid'))
+    print(model.output_shape)
+
     return model
 
 if __name__=='__main__':

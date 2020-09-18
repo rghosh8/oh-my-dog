@@ -1,5 +1,5 @@
 import numpy as np 
-from src.static import *
+from static import *
 import xml.etree.ElementTree as ET
 from PIL import Image
 
@@ -46,7 +46,7 @@ def onboarding(all_images_, all_breeds_):
             idxIn += 1
             breeds_names = np.append(breeds_names, breed)
 
-    normalized_image_vectors = [(images_inputs[item,:,:,:]-127.5)/127.5 \
+    normalized_image_vectors = [(images_inputs[item,:,:,:])/255.0 \
                                         for item in np.linspace(0,len(all_images)-1, num=len(all_images), dtype='int')]
             
     return images_inputs, np.asarray(normalized_image_vectors), breeds_names

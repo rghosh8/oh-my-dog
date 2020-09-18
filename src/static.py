@@ -21,4 +21,4 @@ noise_dim = 100
 num_examples_to_generate = 16
 seed = tf.random.normal([num_examples_to_generate, noise_dim])
 #checkpoints
-checkpoint_dir = './training-checkpoints-1'
+checkpoint_dir = './training-checkpoints-2'

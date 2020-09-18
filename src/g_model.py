@@ -1,5 +1,5 @@
 import tensorflow as tf  
-from src.static import *
+from static import *
 from tensorflow.keras import layers
 
 def g_model():

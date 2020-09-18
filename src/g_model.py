@@ -1,5 +1,5 @@
 import tensorflow as tf  
-from static import *
+from src.static import *
 from tensorflow.keras import layers
 
 def g_model():
@@ -30,5 +30,3 @@ def g_model():
 
     return model
 
-if __name__=='__main__':
-    g_model()

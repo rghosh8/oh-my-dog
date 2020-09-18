@@ -1,5 +1,5 @@
 import tensorflow as tf
-from static import *
+from src.static import *
 from tensorflow.keras import layers
 
 def d_model():
@@ -28,5 +28,3 @@ def d_model():
 
     return model
 
-if __name__=='__main__':
-    d_model()

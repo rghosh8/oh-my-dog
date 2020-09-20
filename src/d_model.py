@@ -4,7 +4,7 @@ from tensorflow.keras import layers
 
 def d_model():
     model = tf.keras.Sequential()
-    model.add(layers.Conv2D(64, (4,4), strides=(2,2), padding='same', input_shape=[image_width,image_height,3],\
+    model.add(layers.Conv2D(64, (4,4), strides=(2,2), padding='same', input_shape=[image_width,image_height,image_channels],\
                             kernel_initializer=weight_init))
     model.add(layers.BatchNormalization())
     model.add(layers.LeakyReLU())
@@ -27,4 +27,3 @@ def d_model():
     print(model.output_shape)
 
     return model
-

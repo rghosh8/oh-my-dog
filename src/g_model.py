@@ -25,7 +25,7 @@ def g_model():
     model.add(layers.BatchNormalization())
     model.add(layers.LeakyReLU())
 
-    model.add(layers.Dense(3, activation='tanh', use_bias=False, kernel_initializer=weight_init))
+    model.add(layers.Dense(1, activation='tanh', use_bias=False, kernel_initializer=weight_init))
     print(model.output_shape)
 
     return model

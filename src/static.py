@@ -1,15 +1,15 @@
 import tensorflow as tf
 import os
 #loading data
-root = '/home/ubuntu/oh-my-dog/data/'
-image_path = root + 'all-dogs/'
+root = '/home/skylar/galvanize/oh-my-dog/data/'
+image_path = root + 'sub_folder/all-dogs/'
 breed_path = root + 'Annotation/'
 all_images = os.listdir(image_path)
 all_breeds = os.listdir(breed_path)
 #setting image 
 image_width = 64
 image_height = 64
-image_channels = 3
+image_channels = 1
 #data visualization: 25 random indices for dog visualization
 rand_idx_viz = [10, 230, 490, 900, 1200, 1500, 2500, 2900, 3400, \
                 3900, 4300, 4750, 5200, 5298, 6450, 6689, 7022, 7450, 7900, 8250, \

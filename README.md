@@ -40,7 +40,7 @@ Here is the GAN network I used for this capstone.
 
 ### Results
 
-GAN are difficult to train. In interest of time, I break the problem into a simpler problem where I focused on grayscale images. Here training results I obtained: 
+GAN is difficult to train. In interest of time, I break the problem into a simpler problem where I focused on grayscale images. Here training results I obtained: 
 
 ![](./figures/dcgan-9.gif)
 

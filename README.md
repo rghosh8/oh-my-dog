@@ -49,7 +49,7 @@ Here is the best dog image I was able to produce during the limited capstone tim
 ![](./figures/image_at_epoch_1140.png)
 
 
-### Conclusion
+### Summary
 
 * GAN is hard to train as it requires an equilibrimum between two competing neural networks. The common problems are mode collapse and non-convergence. 
 

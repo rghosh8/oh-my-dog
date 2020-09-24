@@ -36,7 +36,7 @@ In total, there are 25,000 dogs and 120 breeds.
 
 Here is the GAN network I used for this capstone. 
 
-![](./figures/n02085620_7.jpg)
+![](./figures/my_gan.png)
 
 ### Results
 

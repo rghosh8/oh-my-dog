@@ -44,7 +44,7 @@ GAN is difficult to train. In interest of time, I break the problem into a simpl
 
 ![](./figures/dcgan-9.gif)
 
-Here is the best dog images I was able to produce during the limited capstone time. 
+Here is the best dog image I was able to produce during the limited capstone time. 
 
 ![](./figures/image_at_epoch_1140.png)
 

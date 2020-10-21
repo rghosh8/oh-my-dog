@@ -1,4 +1,4 @@
-# oh-my-dog
+# Dog Image Generation using Generative Adversarial Network(GAN)
 
 ### Abstract
 

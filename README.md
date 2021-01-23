@@ -4,6 +4,10 @@
 
 This capstone uses generative adversarial network (GAN) to generate realistic dog images from the training data. 
 
+### Website
+
+`http://44.238.239.198:5000/about`
+
 ### Data
 
 ![](./figures/dogs.png) 
